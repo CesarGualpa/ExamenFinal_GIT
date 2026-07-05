@@ -13,14 +13,42 @@ header {
 }
 
 /* AQUÍ: Cada estudiante debe agregar sus estilos para su tarjeta y cambios de color global */
-#contenedor-destacados { 
-    display: flex; 
-    gap: 20px; 
+#destacados-container {
+    display: flex;
+    gap: 20px;
     padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
+    width: 320px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.card h3 {
+    color: #0b5394;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0b5394;
+    padding-bottom: 8px;
+}
+
+.card p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #444;
+}
+
+.card strong {
+    color: #222;
 }
