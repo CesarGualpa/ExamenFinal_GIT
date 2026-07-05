@@ -4,6 +4,7 @@ body {
     line-height: 1.6; 
     margin: 0;
     padding: 0;
+    background-color: lightblue;
 }
 
 header { 
@@ -52,3 +53,153 @@ header {
 .card strong {
     color: #222;
 }
+/* DISEÑO DEL CV DEL ESTUDIANTE B */
+        .contenedor-b {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,.15);
+        }
+
+        /* Lado izquierdo */
+
+        .sidebar-b {
+            background: #1e3a5f;
+            color: white;
+            padding: 30px;
+        }
+
+        .foto-b {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background: white;
+            margin: auto;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #1e3a5f;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .sidebar-b h1 {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .sidebar-b h2 {
+            text-align: center;
+            font-size: 18px;
+            color: #d5e5ff;
+            margin-bottom: 25px;
+            font-weight: normal;
+        }
+
+        .sidebar-b section {
+            margin-bottom: 25px;
+        }
+
+        .sidebar-b h3 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,.5);
+            padding-bottom: 5px;
+        }
+
+        .sidebar-b p,
+        .sidebar-b li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .sidebar-b ul {
+            margin-left: 18px;
+        }
+
+        /* Lado derecho */
+
+        .contenido-b {
+            padding: 35px;
+        }
+
+        .contenido-b section {
+            margin-bottom: 35px;
+        }
+
+        .contenido-b h2 {
+            color: #1e3a5f;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #1e3a5f;
+            padding-bottom: 5px;
+        }
+
+        .item-b {
+            margin-bottom: 20px;
+        }
+
+        .item-b h4 {
+            margin-bottom: 5px;
+            color: #1e3a5f;
+        }
+
+        .item-b p {
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .tecnologias-b {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag-b {
+            background: #1e3a5f;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .foto-b {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .foto-b img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 900px) {
+
+            .contenedor-b {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar-b {
+                text-align: center;
+            }
+
+            .sidebar-b ul {
+                list-style: none;
+                margin-left: 0;
+            }
+
+            .tecnologias-b {
+                justify-content: center;
+            }
+
+        }
