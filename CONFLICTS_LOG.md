@@ -80,3 +80,60 @@ Código final:
     gap: 20px;
     padding: 20px;
 }
+
+## Conflicto 5: Integración de oferta y estilos del candidato C
+
+**Fecha/Hora:** 04/07/2026 - 22:45
+
+**Archivos afectados:**
+- index.html
+- css/styles.css
+
+**Descripción del conflicto:**
+Al intentar integrar la rama `feature/candidato-c` con la rama `dev`, Git detectó conflictos en los archivos `index.html` y `css/styles.css`.
+
+El conflicto ocurrió porque la rama `dev` ya tenía cambios previos realizados por otros candidatos, mientras que la rama `feature/candidato-c` agregaba nuevos cambios sobre las mismas secciones del código.
+
+**Decisión tomada:**
+Se decidió conservar ambos cambios.
+
+En `index.html`, se mantuvieron las ofertas laborales ya existentes y también se agregó la oferta laboral del candidato C. Esta decisión se tomó porque el examen requiere que la versión final muestre las tres ofertas laborales integradas.
+
+En `css/styles.css`, se combinaron los estilos necesarios de ambas versiones para mantener un diseño coherente en el contenedor de destacados. Se eliminaron estilos repetidos y se dejó una sola estructura final.
+
+**Justificación:**
+Ambos cambios eran importantes para el proyecto. Los cambios existentes en `dev` ya formaban parte de la integración del equipo, y los cambios de `feature/candidato-c` completaban la funcionalidad asignada al candidato C.
+
+**Resultado final:**
+Se conservaron los aportes de ambas ramas, se eliminaron las marcas de conflicto y los archivos quedaron listos para ser revisados y fusionados hacia `dev`.
+
+
+## Conflicto 6 : Selector y diseño del contenedor de destacados
+
+**Fecha/Hora:** 04/07/2026 - 20:30
+
+**Archivos afectados:**
+- css/styles.css
+- index.html
+
+**Descripción del conflicto:**
+Durante la integración de la rama `feature/candidato-c` con la rama `dev`, se generó un conflicto en los estilos del contenedor de destacados.
+
+Una versión utilizaba el selector `#destacados-container` con `display: flex`, mientras que la otra versión utilizaba el selector `#contenedor-destacados` con `display: grid`.
+
+**Decisión tomada:**
+Se decidió conservar ambos aportes de forma ordenada, pero no duplicar código.
+
+Se mantuvo el cambio estructural del selector usando `.destacados-container`, ya que permite trabajar el contenedor como una clase reutilizable.
+
+También se mantuvo el diseño con `display: grid`, porque las ofertas laborales se visualizan mejor como tarjetas distribuidas en columnas.
+
+**Código final elegido:**
+
+```css
+.destacados-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
