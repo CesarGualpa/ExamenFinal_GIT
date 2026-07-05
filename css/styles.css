@@ -4,6 +4,7 @@ body {
     line-height: 1.6; 
     margin: 0;
     padding: 0;
+    background-color: lightblue;
 }
 
 header { 
@@ -14,7 +15,7 @@ header {
 
 /* AQUÍ: Cada estudiante debe agregar sus estilos para su tarjeta y cambios de color global */
 #contenedor-destacados { 
-    display: flex; 
+    display: grid; 
     gap: 20px; 
     padding: 20px;
 }
